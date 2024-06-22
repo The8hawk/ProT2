@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Barberia Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="Front/assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="Front/assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="caja">
+            <h1><img src="Front/assets/img/imagenes/logo.png"></h1>
+    
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="principal1.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Otros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" href="#">Quienes Somos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Iniciar Sesion</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true"></a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+    
+        </div>
+    </header>
+    <div class="container mt-5 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 50%;">
+            <div class="card-header text-center">
+                <h2>Iniciar sesión</h2>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/enviarlogin">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                        <input name="email" type="text" class="form-control" placeholder="correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                        <input name="pass" type="password" class="form-control" placeholder="contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-success">Ingresar</button>
+                    <a href="/login" class="btn btn-danger">Cancelar</a>
+                    <p>¿Aún no se registró? <a href="/registro">Registrarse aquí</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ <footer>
+    <img src="Front/assets/img/imagenes/logo-blanco.png">
+    <p class="copyright">&copy Copyright Barbería Alura 2020</p>
+ </footer>
+
+
+ </body>
+
+</html>
